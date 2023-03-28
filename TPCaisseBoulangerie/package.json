@@ -1,0 +1,21 @@
+{
+  "name": "caisseboulangerie",
+  "version": "1.0.0",
+  "description": "Gestion d'une caisse de boulangerie",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "viewer": "firefox http://localhost:8000 &"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "fetch"
+  ],
+  "author": "Damien Genthial",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "twig": "^1.15.4"
+  }
+}

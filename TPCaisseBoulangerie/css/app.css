@@ -1,0 +1,14 @@
+/* Feuille de style principale de l'application */
+body {
+    margin: 10px;
+    font-family: Trebuchet MS, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 18px 0px;
+    padding: 10px 5px;
+	font-size: 1.2em;
+	color: white;
+	background: #FF4E02; 
+	text-align: center;
+}

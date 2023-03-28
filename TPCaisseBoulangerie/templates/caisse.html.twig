@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="/assets/UGA.ico" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css"/>
+    <title>Caisse</title>
+</head>
+<body>
+<div class="row justify-content-center">
+    <h1 class="col-6">Caisse enregistreuse</h1>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="row justify-content-center" id="boutons-rayons">
+            <button class="col-2 btn btn-success">Pain</button>
+            <button class="col-3 btn btn-info">Viennoiserie</button>
+            <button class="col-2 btn btn-warning">Pâtisserie</button>
+            <button class="col-2 btn btn-danger">Confiserie</button>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-3">
+                <label for="libelle">Libellé</label>
+                <input type="text" class="form-control" id="libelle"
+                       placeholder="Rayon ou formule"/>
+            </div>
+            <div class="col-3">
+                <label for="prix">Prix unitaire</label>
+                <input type="text" class="form-control" id="prix"
+                       placeholder="Prix unitaire"/>
+            </div>
+            <div class="col-3">
+                <label for="qte">Quantité</label>
+                <input type="text" class="form-control" id="qte" value="1"/>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+            <table class="table">
+                <thead>
+                    <tr><th>Libellé</th><th>Prix</th><th>Qté</th><th>Total</th></tr>
+                    <tr style="visibility: hidden" id="aCloner">
+                        <td></td><td></td><td></td><td></td>
+                    </tr>
+                </thead>
+                <tbody id="recapitulatif">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="text-align: right" colspan="3">Total :</th>
+                        <td id="totalRecap"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-6" id="boutonsRaccourcis">
+        <div class="row">
+            <button class="col-3 btn btn-success boutonsRaccourcis">Bouton 1</button>
+            <button class="col-3 btn btn-info boutonsRaccourcis" >Bouton 2</button>
+            <button class="col-3 btn btn-warning boutonsRaccourcis">Bouton 3</button>
+        </div>
+        <div class="row">
+            <button class="col-3 btn btn-primary boutonsRaccourcis" >Bouton 4</button>
+            <button class="col-3 btn btn-secondary boutonsRaccourcis">Bouton 5</button>
+            <button class="col-3 btn btn-dark boutonsRaccourcis">Bouton 6</button>
+        </div>
+        <p style="margin: 50px;">&nbsp;</p>
+        <div class="row">
+            <button class="col-9 btn btn-success" id="payer">Payer</button>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
+
