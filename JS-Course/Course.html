@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+
+<h1>Course contre la montre</h1>
+<section class="content">
+<div class="field">
+<form>
+    <fieldset>
+    <legend>Classer un coureur</legend>
+    <input type ="text" placeholder="nom" id="nomClasser">
+    <input type ="time" value="temps" step="2" id="temps">
+    <input type="button" onclick="classer()" value="Classer">
+</form>
+</fieldset>
+
+<br>
+
+<form>
+    <fieldset>
+    <legend>Déclasser</legend>
+    <input type ="text" placeholder="nomDeclasser" id="nomDeclasser">
+    <input type="button" onclick="declasser()" value="Déclasser">
+    </fieldset>
+</form>
+</div>
+
+<br>
+
+<div class="tableau">
+<table border="1">
+    <thead>
+    <tr>
+        <th>Classment</th>
+        <th>Temps</th>
+        <th>Nom</th>
+    </tr>
+    </thead>
+</table>
+<script src="Classes.js"></script>
+<script src="Course.js"></script>
+</div>
+</section>
+</body>
+
+
+</html>
