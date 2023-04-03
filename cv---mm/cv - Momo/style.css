@@ -1,0 +1,316 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.barre{
+    width: 35vw;
+    height: auto;
+    background-color: rgb(255, 202, 26);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profil h1{
+    display: none;
+}
+
+.contact h1,
+.apropos h1,
+.loisirs h1{
+    background-color: rgb(39, 39, 39);
+    color :rgb(255, 202, 26);
+    margin: 30px 0 30px 0;
+    width: 35vw;
+    text-align: center;
+    font-size: x-large;
+    padding: 5px 0 5px 0 ;
+    flex-wrap: wrap;
+}
+
+.info,
+.info-page,
+.loisirs p{
+    margin: 1vh 15% 1vh 15%;
+}
+
+.info label, 
+.info p{
+    margin: 0
+}
+
+/*---page---*/
+
+.conteneur{
+    width: 55vw;
+    background-color: white;
+    padding: 5vw;
+}
+
+.ligne{
+    border-bottom: 3px solid rgb(255, 202, 26);
+    width: 50px;
+    margin-top: 0;
+}
+
+.titre h1{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.titre p{
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.donnee h1:nth-child(1){
+    margin-top: 10vh;
+
+}
+
+.donnee h1{
+    width: 100%;
+    border-bottom: 3px solid rgb(255, 202, 26);
+    margin-top: 3vh;
+    padding-bottom: 10px;
+    font-size: large;
+}
+
+#icone-titre{
+    width: 3vh;
+    height: 3vh;
+    margin-right: 30px;
+    margin-bottom: 0;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(40%) saturate(7301%) hue-rotate(323deg) brightness(98%) contrast(106%);
+}
+
+.img-date{
+    width: 1.5vh;
+    height: 1.5vh;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(40%) saturate(7301%) hue-rotate(323deg) brightness(98%) contrast(106%);
+}
+
+.image-point{
+    width: 2vh;
+    height: 2vh;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(95%) sepia(40%) saturate(7301%) hue-rotate(323deg) brightness(98%) contrast(106%);
+}
+
+.contenu{
+    display: flex;
+}
+
+
+.date h3, .etudes-info h2{
+    font-size: 1em;
+}
+
+.date{
+    width: 40%;
+}
+
+.date p{
+     margin: -20px auto auto 30px;
+}
+
+.etudes-info{
+    width: 60%;
+}
+
+
+.etudes-info h2{
+    margin-bottom: 0;
+}
+
+.etudes-info p{
+    margin-top: 0;
+}
+
+.contenu:last-child{
+    padding-bottom: 30%;
+}
+
+
+@media (max-width: 700px) {
+    .informations,
+    .informations-page{
+        margin: 1vh 5% 1vh 5%;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    body{
+        flex-direction: column;
+    }
+    .barre{
+    width: 100vw;
+    height: 100vh;
+    }
+
+    .contact{
+        display: flex;
+        height: 20vh;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .apropos{
+        margin-top: 10vh;
+    }
+
+    .conteneur{
+        width: 90vw;
+        margin: 0 5Vw 0 0;
+    }
+        
+    .contact h1,
+    .apropos h1{
+        margin: 30px 0 30px 0;
+        width: 100vw;
+        font-size: x-large;
+        padding: 5px 0 5px 0 ;
+    }
+
+    .profil h1{
+        display: flex;
+        width: 50%;
+    }
+
+    .titre h1{
+        display: none;
+    }
+
+    .titre p{
+        font-size: 1.7em;
+    }
+
+    .profil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info,
+    .info-page{
+        margin: 1vh 5% 1vh 5%;
+    }
+
+    
+}
+
+@media (min-width: 1100px){
+    body{
+        width: 80vw;
+        margin-left: 10vw;
+        background-color: rgb(0, 0, 0);
+    }
+
+   
+    
+}
+
+@media (max-width: 750px) {
+    contact h1{
+        margin-left: 0;
+    }
+}
+
+
+
+@media (max-width: 610px) {
+
+    .contenu h1:nth-child(1){
+    margin-top: 5vh;
+    }
+    .contenu{
+        flex-direction: column;
+    }
+
+    .date{
+        display: flex;
+        width: 100%;
+        margin-bottom: -20px;
+    }
+
+    .etudes-info{
+        width: 100%;
+    }
+
+    .date p{
+     margin: auto;
+     margin-left: 10px;
+}
+}
+
+@media (max-width: 500px) {
+    body{
+        flex-direction: column;
+    }
+    .barre{
+    width: 100vw;
+    height: 100vh;
+    }
+
+    .contact{
+        display: flex;
+        height: 20vh;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .apropos{
+        margin-top: 10vh;
+    }
+
+    .conteneur{
+        width: 90vw;
+        margin: 0 5Vw 0 0;
+    }
+        
+    .contact h1,
+    .apropos h1{
+        margin: 30px 0 30px 0;
+        width: 100vw;
+        font-size: x-large;
+        padding: 5px 0 5px 0 ;
+    }
+
+    .profil h1{
+        display: flex;
+        width: 50%;
+    }
+
+    .titre h1{
+        display: none;
+    }
+
+    .titre p{
+        font-size: 1.7em;
+    }
+
+    .profil{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info,
+    .info-page{
+        margin: 1vh 5% 1vh 5%;
+    }
+
+    
+}
+
